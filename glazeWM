@@ -2,7 +2,7 @@ general:
   # Commands to run when the WM has started. This is useful for running a
   # script or launching another application.
   # Example: The below command launches Zebar.
-  startup_commands: ['shell-exec zebar']
+  startup_commands: []
 
   # Commands to run just before the WM is shutdown.
   # Example: The below command kills Zebar.
@@ -44,14 +44,14 @@ gaps:
   scale_with_dpi: true
 
   # Gap between adjacent windows.
-  inner_gap: '5px'
+  inner_gap: '2px'
 
   # Gap between windows and the screen edge.
   outer_gap:
-    top: '5px'
-    right: '5px'
-    bottom: '5px'
-    left: '5px'
+    top: '2px'
+    right: '2px'
+    bottom: '2px'
+    left: '2px'
 
 window_effects:
   # Visual effects to apply to the focused window.
@@ -92,8 +92,8 @@ window_effects:
       enabled: false
       style: 'square'
     transparency:
-      enabled: false
-      opacity: '0%'
+      enabled: true
+      opacity: '90%'
 
 window_behavior:
   # New windows are created in this state whenever possible.
@@ -114,7 +114,7 @@ window_behavior:
     fullscreen:
       # Maximize the window if possible. If the window doesn't have a
       # maximize button, then it'll be fullscreen'ed normally instead.
-      maximized: false
+      maximized: true
 
       # Whether to show fullscreen windows as always on top.
       shown_on_top: false
