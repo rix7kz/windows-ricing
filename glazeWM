@@ -48,10 +48,10 @@ gaps:
 
   # Gap between windows and the screen edge.
   outer_gap:
-    top: '2px'
-    right: '2px'
-    bottom: '2px'
-    left: '2px'
+    top: '0px'
+    right: '0px'
+    bottom: '0px'
+    left: '0px'
 
 window_effects:
   # Visual effects to apply to the focused window.
@@ -60,7 +60,7 @@ window_effects:
     # ** Exclusive to Windows 11 due to API limitations.
     border:
       enabled: true
-      color: '#8dbcff'
+      color: '#ff0000'
 
     # Remove the title bar from the window's frame. Note that this can
     # cause rendering issues for some applications.
@@ -92,8 +92,8 @@ window_effects:
       enabled: false
       style: 'square'
     transparency:
-      enabled: true
-      opacity: '90%'
+      enabled: false
+      opacity: '0%'
 
 window_behavior:
   # New windows are created in this state whenever possible.
